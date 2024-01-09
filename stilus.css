@@ -11,6 +11,7 @@ main{
     border: 2px solid green;
     width: 60%;
     margin: auto;
+    min-height: 100vh ;
 }
 
 nav{
@@ -182,6 +183,7 @@ article {
     padding: 20px;
     background: #AA7E39;
     overflow: auto; /* Adjuk hozzá az overflow tulajdonságot */
+    min-height: 80vh;
 }
 
 .gallery {
