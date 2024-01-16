@@ -1,49 +1,102 @@
 <!DOCTYPE html>
 <html lang="HU">
 <head>
-    <title>Lajkó Gergő</title>
+    <title>Egy süni blogja</title>
     <link rel="stylesheet" href="stilus.css">
     <meta charset="UTF-8">
     <meta name="description" content="Önéletrajz">
     <meta name="keywords" content="Hobby, tanulás">
     <meta name="author" content="Lajkó Gergő">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-    <main>
-        <header>
-            <h1>Lajkó Gergő</h1>
-            <nav>
-                <ul>  
-                    <li><a href="index.html">Főoldal</a></li>
-                    <li><a href="munkaim.html">Munkáim</a></li>
-                    <li><a href="galeria.html">Galéria</a></li>
-                </ul>
+<body class="container">
+        <main class="row">
+            <header class="col-md-12">
+                <h1 class="text-center text-uppercase pb-5">Egy süni bogja</h1>
+            </header>
+            <!--Navigáció -->
+            <nav class="navbar navbar-expand-sm">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="javascript:void(0)">Logo</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="mynavbar">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Főoldal</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="sutemenyek.html">Sütemények</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)">Galéria</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                        <input class="form-control me-2" type="text" placeholder="Search">
+                        <button class="btn btn-primary" type="button">Keresés</button>
+                        </form>
+                    </div>
+                </div>
             </nav>
-        </header>
-        <article>
-            <h1>Ez vagyok én</h1>
-            <div id="bemutatkozas">
-                <img id="profil" src="index/profil.jpg" alt=""> 
-                <span id="szoveg">
-                    Lajkó Gergő vagyok, 20 éves. Tavaly Rendszergazdai technikusnak tanultam, jelenleg pedig Szoftverfejlesztőnek a Számalk Technikumban.<br>
-                    Családommal élek együtt, 2 testvéremmel, és Fügével, a kutyánkkal. Igaz, most távol vagyok tőlük, mert kollégiumban élek.<br>
-                    Imádok sütni, főzni, nagy kedvencem a kovászal sütni, mert nagyon ki tud kapcsolni. Emellett imádok fényképezni, biciklizni és a szabadban lenni.<br>
-                    Zene stilusban eléggé tágan mozgok a rockon át a hip-hopon tul a retroig vannak kedvenceim. De ha egyet kellen ki emelnem akkor az a <span id="zene"> Floyd  Anotther Brick In The Wall
-                        
-                    </span>
-                </span>
-                <p>
-                <audio controls>
-                        <source src="index/Pink Floyd - Another Brick In The Wall (HQ).mp3" type="audio/mpeg">
-                    </audio>
-            </div>    
-        </article>
-        <footer>
-            Készítette: Lajkó Gergő
-             <a href="https://github.com/lajkogege" target="_blank"><img class="logo" src="ikonok/github.png" alt=""></a>
-            <a href="https://www.instagram.com/lajkogege/" target="_blank"><img  class="logo" src="ikonok/insta.png" alt=""></a>
-        </footer>
-    </main>
-</body>
+            <!--Navigáció -->
+
+            <article>
+                <h1>Friss bejegyzések</h1>
+               <div id="frissbejegyzesek">
+                  <section>
+                        <div class="card-body">
+                            <div class="kartyacim">Szalagos fánk</div>
+                            <div class="card-body"><img src="bejegyzesek/2024.01.16/szalagosfank.jpg" class="img-thumbnail" alt="Cinque Terre"></div>
+                            <span class="kartyaszoveg">A langyos tejben elmorzsolom a friss élesztőt és letakarva 5-7 perc alatt meleg 
+                            helyet fel futtatom. Tetejére egy kis lisztet szórok...</span>
+                            <div class="card-footer">
+                            <button type="button" class="gombok"><a href="szalagosfank.html">Megynitás</a></button>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="card-body">
+                            <div class="kartyacim">Setemény2</div>
+                            <div class="card-body"><img src="index/headerkep.jpg" class="img-thumbnail" alt="Cinque Terre"></div>
+                            <span class="kartyaszoveg">Bejegyzés</span>
+                            <div class="card-footer">
+                                <button type="button" class="gombok"><a href="szalagosfank.html">Megynitás</a></button>
+                            </div>
+                        </div>
+                    </section>
+                    <section >
+                        <div class="card-body">
+                            <div class="kartyacim">Setemény3</div>
+                            <div class="card-body"><img src="index/headerkep.jpg" class="img-thumbnail" alt="Cinque Terre"></div>
+                            <span class="kartyaszoveg">Bejegyzés</span>
+                        <div class="card-footer">
+                                <button type="button" class="gombok"><a href="szalagosfank.html">Megynitás</a></button>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="card-body">
+                            <div class="kartyacim">Setemény3</div>
+                            <div class="card-body"><img src="index/headerkep.jpg" class="img-thumbnail" alt="Cinque Terre"></div>
+                            <span class="kartyaszoveg">Bejegyzés</span>
+                            <div class="card-footer">
+                                <button type="button" class="gombok"><a href="szalagosfank.html">Megynitás</a></button>
+                            </div>
+                        </div>
+                    </section>
+                </div>  
+            </article>
+            <footer>
+                2023
+            </footer>
+        </main>
+ </body>
 </html>
+
+
+
+
+ 
